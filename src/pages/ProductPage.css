@@ -1,0 +1,442 @@
+/* Product Hero */
+.product-hero {
+  padding: var(--space-xl) var(--space-lg) var(--space-2xl);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.product-hero__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gray);
+  margin-bottom: var(--space-md);
+}
+
+.product-hero__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-6xl);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--off-white);
+  margin-bottom: var(--space-lg);
+}
+
+.product-hero__intro {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  line-height: 1.6;
+  color: var(--silver);
+  max-width: 600px;
+}
+
+/* Product Garments Section */
+.product-garments {
+  padding: var(--space-2xl) var(--space-lg);
+  border-top: 1px solid var(--dark);
+}
+
+.product-garments__header {
+  max-width: 1200px;
+  margin: 0 auto var(--space-2xl);
+}
+
+.product-garments__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gray);
+  margin-bottom: var(--space-sm);
+}
+
+.product-garments__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  color: var(--off-white);
+}
+
+.product-garments__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product Card */
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__image {
+  aspect-ratio: 3 / 4;
+  margin-bottom: var(--space-md);
+  overflow: hidden;
+}
+
+.product-card__placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dark);
+}
+
+.product-card__placeholder span {
+  font-family: var(--font-mono);
+  font-size: var(--text-4xl);
+  color: var(--dark);
+  letter-spacing: 0.1em;
+}
+
+.product-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.product-card__edition {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gray);
+}
+
+.product-card__name {
+  font-family: var(--font-serif);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--off-white);
+}
+
+.product-card__description {
+  font-family: var(--font-serif);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--light-gray);
+}
+
+.product-card__fabric {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--gray);
+  margin-top: var(--space-xs);
+}
+
+.product-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--dark);
+}
+
+.product-card__price {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  color: var(--off-white);
+}
+
+.product-card__cta {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--off-white);
+  background: transparent;
+  border: 1px solid var(--off-white);
+  padding: var(--space-xs) var(--space-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-card__cta:hover {
+  background: var(--off-white);
+  color: var(--black);
+}
+
+/* Fabric Story Section */
+.product-fabric {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  padding: var(--space-3xl) var(--space-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid var(--dark);
+}
+
+.product-fabric__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gray);
+  margin-bottom: var(--space-sm);
+}
+
+.product-fabric__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  color: var(--off-white);
+  margin-bottom: var(--space-lg);
+}
+
+.product-fabric__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.product-fabric__text p {
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--light-gray);
+}
+
+.product-fabric__text strong {
+  color: var(--off-white);
+}
+
+.product-fabric__visual {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.product-fabric__swatch {
+  flex: 1;
+  aspect-ratio: 1;
+  background: var(--charcoal);
+  border: 1px solid var(--dark);
+}
+
+.product-fabric__swatch:nth-child(1) { background: #3d3d3d; }
+.product-fabric__swatch:nth-child(2) { background: #4a4a4a; }
+.product-fabric__swatch:nth-child(3) { background: #2d2d2d; }
+
+/* Sizing Section */
+.product-sizing {
+  padding: var(--space-3xl) var(--space-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 1px solid var(--dark);
+}
+
+.product-sizing__header {
+  margin-bottom: var(--space-2xl);
+}
+
+.product-sizing__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gray);
+  margin-bottom: var(--space-sm);
+}
+
+.product-sizing__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  color: var(--off-white);
+}
+
+.product-sizing__options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+.sizing-option {
+  padding: var(--space-lg);
+  border: 1px solid var(--dark);
+}
+
+.sizing-option__number {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  color: var(--gray);
+  margin-bottom: var(--space-md);
+}
+
+.sizing-option__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--off-white);
+  margin-bottom: var(--space-sm);
+}
+
+.sizing-option__desc {
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--light-gray);
+  margin-bottom: var(--space-md);
+}
+
+.sizing-option__shipping {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gray);
+}
+
+/* Care Section */
+.product-care {
+  padding: var(--space-3xl) var(--space-lg);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid var(--dark);
+}
+
+.product-care__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gray);
+  margin-bottom: var(--space-sm);
+}
+
+.product-care__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-4xl);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--off-white);
+  margin-bottom: var(--space-lg);
+}
+
+.product-care__text {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  line-height: 1.6;
+  color: var(--light-gray);
+  margin-bottom: var(--space-lg);
+}
+
+.product-care__link {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--off-white);
+  text-decoration: none;
+  border-bottom: 1px solid var(--off-white);
+  padding-bottom: 2px;
+  transition: opacity 0.2s ease;
+}
+
+.product-care__link:hover {
+  opacity: 0.7;
+}
+
+/* CTA Section */
+.product-cta {
+  padding: var(--space-4xl) var(--space-lg);
+  text-align: center;
+  border-top: 1px solid var(--dark);
+}
+
+.product-cta__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  color: var(--off-white);
+  margin-bottom: var(--space-md);
+}
+
+.product-cta__text {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  color: var(--light-gray);
+  margin-bottom: var(--space-xl);
+}
+
+.product-cta__button {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--black);
+  background: var(--off-white);
+  border: none;
+  padding: var(--space-sm) var(--space-lg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-cta__button:hover {
+  background: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .product-garments__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-hero {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .product-hero__title {
+    font-size: var(--text-5xl);
+  }
+
+  .product-garments {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  .product-garments__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .product-fabric {
+    grid-template-columns: 1fr;
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .product-sizing {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .product-sizing__options {
+    grid-template-columns: 1fr;
+  }
+
+  .product-care {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .product-care__title {
+    font-size: var(--text-3xl);
+  }
+
+  .product-cta {
+    padding: var(--space-2xl) var(--space-md);
+  }
+}

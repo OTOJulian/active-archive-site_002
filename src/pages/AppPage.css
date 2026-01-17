@@ -1,0 +1,109 @@
+.app-page {
+  padding: var(--space-lg) var(--space-lg) var(--space-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-page__hero {
+  margin-bottom: var(--space-3xl);
+}
+
+.app-page__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--light-gray);
+  margin-bottom: var(--space-md);
+}
+
+.app-page__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-5xl);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--off-white);
+  margin-bottom: var(--space-lg);
+}
+
+.app-page__intro {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  line-height: 1.6;
+  color: var(--silver);
+  max-width: 600px;
+}
+
+.app-page__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--dark);
+}
+
+.app-page__feature {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.app-page__feature-number {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  color: var(--gray);
+}
+
+.app-page__feature-title {
+  font-family: var(--font-serif);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--off-white);
+}
+
+.app-page__feature-desc {
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--light-gray);
+}
+
+.app-page__cta {
+  text-align: center;
+  padding: var(--space-2xl) 0;
+  border-top: 1px solid var(--dark);
+}
+
+.app-page__cta-text {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  color: var(--off-white);
+  margin-bottom: var(--space-xs);
+}
+
+.app-page__cta-subtext {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  .app-page {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .app-page__title {
+    font-size: var(--text-4xl);
+  }
+
+  .app-page__features {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
