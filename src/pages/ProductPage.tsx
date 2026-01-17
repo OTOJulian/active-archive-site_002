@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useNavigationDirection } from '../App';
 import './ProductPage.css';
+import woolImage from '../assets/images/wool_002.png';
 
 const ProductPage = () => {
   const direction = useNavigationDirection();
@@ -146,7 +147,9 @@ const ProductPage = () => {
           viewport={{ once: true }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="product-fabric__swatch"></div>
+          <div className="product-fabric__swatch">
+            <img src={woolImage} alt="Wool fabric swatch" />
+          </div>
           <div className="product-fabric__swatch"></div>
           <div className="product-fabric__swatch"></div>
         </motion.div>
