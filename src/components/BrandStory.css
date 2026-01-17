@@ -1,0 +1,136 @@
+.brand-story {
+  padding: var(--space-3xl) 0;
+}
+
+/* Header */
+.brand-story__header {
+  margin-bottom: var(--space-2xl);
+}
+
+.brand-story__header-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.brand-story__header h2 {
+  font-size: var(--text-5xl);
+  letter-spacing: -0.04em;
+}
+
+.brand-story__header-line {
+  height: 1px;
+  background: var(--dark);
+}
+
+/* Introduction */
+.brand-story__intro {
+  margin-bottom: var(--space-3xl);
+}
+
+.brand-story__intro p {
+  font-size: var(--text-xl);
+  line-height: 1.7;
+  color: var(--mid);
+}
+
+/* Quote Blocks */
+.brand-story__quotes {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-story__quote-block {
+  padding: var(--space-2xl) 0;
+  border-top: 1px solid var(--silver);
+}
+
+.brand-story__quote-block:last-child {
+  border-bottom: 1px solid var(--silver);
+}
+
+.brand-story__quote-inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.brand-story__quote-number {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.1em;
+  color: var(--gray);
+  padding-top: 0.5em;
+}
+
+.brand-story__quote-content {
+  max-width: 900px;
+}
+
+.brand-story__quote-content blockquote {
+  font-family: var(--font-serif);
+  font-size: var(--text-4xl);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--dark);
+  margin-bottom: var(--space-md);
+}
+
+.brand-story__quote-annotation {
+  font-size: var(--text-base);
+  color: var(--gray);
+  font-style: italic;
+  max-width: 50ch;
+}
+
+/* Closing */
+.brand-story__closing {
+  margin-top: var(--space-3xl);
+}
+
+.brand-story__closing-box {
+  max-width: 700px;
+  margin-left: auto;
+  padding: var(--space-xl);
+  background: var(--white);
+  border: 1px solid var(--silver);
+}
+
+.brand-story__closing-box .label {
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.brand-story__closing-box p {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--mid);
+  max-width: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .brand-story {
+    padding: var(--space-2xl) 0;
+  }
+
+  .brand-story__header h2 {
+    font-size: var(--text-4xl);
+  }
+
+  .brand-story__quote-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .brand-story__quote-content blockquote {
+    font-size: var(--text-2xl);
+  }
+
+  .brand-story__closing-box {
+    margin-left: 0;
+  }
+}
