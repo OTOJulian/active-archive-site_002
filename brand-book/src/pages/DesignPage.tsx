@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useNavigationDirection } from '../App';
+import PageNav from '../components/PageNav';
 import './DesignPage.css';
 
 const DesignPage = () => {
@@ -41,18 +42,11 @@ const DesignPage = () => {
         ease: [0.32, 0.72, 0, 1]
       }}
     >
-      <nav className="page__nav">
-        <Link to="/" className="page__brand">Active : Archive</Link>
-        <div className="page__links">
-          <Link to="/shop" className="page__link">Shop</Link>
-          <Link to="/sell" className="page__link">Sell</Link>
-          <Link to="/design" className="page__link page__link--active">Design</Link>
-        </div>
-      </nav>
+      <PageNav activePage="design" />
 
       {/* Section 1: Hero */}
       <section className="design-hero">
-        <div className="design-hero__dots">
+        <div className="design-hero__dots" aria-hidden="true">
           <div className="design-hero__dot" />
           <div className="design-hero__dot" />
           <div className="design-hero__dot" />
@@ -295,21 +289,21 @@ const DesignPage = () => {
           >
             <div className="timeline__point timeline__point--sparse">
               <span className="timeline__year">Year 1</span>
-              <div className="timeline__density">
+              <div className="timeline__density" aria-hidden="true">
                 <span /><span /><span />
               </div>
             </div>
-            <div className="timeline__connector" />
+            <div className="timeline__connector" aria-hidden="true" />
             <div className="timeline__point timeline__point--moderate">
               <span className="timeline__year">Year 3</span>
-              <div className="timeline__density">
+              <div className="timeline__density" aria-hidden="true">
                 <span /><span /><span /><span /><span /><span />
               </div>
             </div>
-            <div className="timeline__connector" />
+            <div className="timeline__connector" aria-hidden="true" />
             <div className="timeline__point timeline__point--rich">
               <span className="timeline__year">Year 5</span>
-              <div className="timeline__density">
+              <div className="timeline__density" aria-hidden="true">
                 <span /><span /><span /><span /><span /><span /><span /><span /><span /><span /><span /><span />
               </div>
             </div>
@@ -323,7 +317,7 @@ const DesignPage = () => {
 
       {/* Section 8: CTA */}
       <section className="design-cta">
-        <div className="design-cta__dots">
+        <div className="design-cta__dots" aria-hidden="true">
           <div className="design-cta__dot" />
           <div className="design-cta__dot" />
           <div className="design-cta__dot" />
@@ -341,10 +335,10 @@ const DesignPage = () => {
             to monetize them through Active:Archive while you're at it — that's built in.
           </p>
           <div className="design-cta__actions">
-            <Link to="/contact" className="design-cta__button">
+            <Link to="/sell" className="btn btn--primary">
               Talk to us about your archive
             </Link>
-            <Link to="/sell" className="design-cta__secondary">
+            <Link to="/sell" className="btn btn--text">
               Or see how brands sell through Active:Archive →
             </Link>
           </div>

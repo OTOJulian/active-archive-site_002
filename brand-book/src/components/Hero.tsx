@@ -87,7 +87,7 @@ const Hero = () => {
       </motion.div>
 
       {/* Corner Dots */}
-      <div className="hero__marks">
+      <div className="hero__marks" aria-hidden="true">
         <div className="hero__dot" style={{ top: 'var(--space-md)', left: 'var(--space-md)' }} />
         <div className="hero__dot" style={{ top: 'var(--space-md)', right: 'var(--space-md)' }} />
         <div className="hero__dot" style={{ bottom: 'var(--space-md)', left: 'var(--space-md)' }} />

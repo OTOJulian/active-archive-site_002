@@ -542,34 +542,7 @@
   margin-top: var(--space-xl);
 }
 
-.design-cta__button {
-  font-family: var(--font-mono);
-  font-size: var(--text-sm);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--black);
-  background: var(--off-white);
-  border: none;
-  padding: var(--space-sm) var(--space-lg);
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.design-cta__button:hover {
-  background: var(--white);
-}
-
-.design-cta__secondary {
-  font-family: var(--font-mono);
-  font-size: var(--text-sm);
-  color: var(--light-gray);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.design-cta__secondary:hover {
-  color: var(--off-white);
-}
+/* CTA button styles now in index.css unified system */
 
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {

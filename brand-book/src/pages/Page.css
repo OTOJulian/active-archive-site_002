@@ -1,46 +1,8 @@
+/* Base page styles */
 .page {
   min-height: 100vh;
   background-color: var(--black);
   color: var(--off-white);
-}
-
-.page__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--space-md);
-}
-
-.page__brand {
-  font-family: var(--font-serif);
-  font-size: var(--text-lg);
-  color: var(--off-white);
-  text-decoration: none;
-  letter-spacing: 0.05em;
-}
-
-.page__links {
-  display: flex;
-  gap: var(--space-lg);
-}
-
-.page__link {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--off-white);
-  text-decoration: none;
-  opacity: 0.6;
-  transition: opacity 0.2s ease;
-}
-
-.page__link:hover {
-  opacity: 1;
-}
-
-.page__link--active {
-  opacity: 1;
 }
 
 .page__content {

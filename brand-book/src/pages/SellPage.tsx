@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useNavigationDirection } from '../App';
+import PageNav from '../components/PageNav';
 import './SellPage.css';
 import woolImage from '../assets/images/wool_002.png';
 
@@ -59,14 +60,7 @@ const SellPage = () => {
         ease: [0.32, 0.72, 0, 1]
       }}
     >
-      <nav className="page__nav">
-        <Link to="/" className="page__brand">Active : Archive</Link>
-        <div className="page__links">
-          <Link to="/shop" className="page__link">Shop</Link>
-          <Link to="/sell" className="page__link page__link--active">Sell</Link>
-          <Link to="/design" className="page__link">Design</Link>
-        </div>
-      </nav>
+      <PageNav activePage="sell" />
 
       {/* Section 1: Hero */}
       <section className="product-hero">
@@ -110,7 +104,7 @@ const SellPage = () => {
                 <p className="product-card__fabric">{product.fabric}</p>
                 <div className="product-card__footer">
                   <span className="product-card__price">${product.price}</span>
-                  <button className="product-card__cta">Try On</button>
+                  <button className="btn btn--secondary">Try On</button>
                 </div>
               </div>
             </motion.article>
@@ -150,8 +144,8 @@ const SellPage = () => {
           <div className="product-fabric__swatch">
             <img src={woolImage} alt="Wool fabric swatch" />
           </div>
-          <div className="product-fabric__swatch"></div>
-          <div className="product-fabric__swatch"></div>
+          <div className="product-fabric__swatch" aria-hidden="true"></div>
+          <div className="product-fabric__swatch" aria-hidden="true"></div>
         </motion.div>
       </section>
 
@@ -220,7 +214,7 @@ const SellPage = () => {
           <p className="product-cta__text">
             Join the waitlist for early access and sizing consultation.
           </p>
-          <button className="product-cta__button">Join Waitlist</button>
+          <button className="btn btn--primary">Join Waitlist</button>
         </motion.div>
       </section>
     </motion.main>

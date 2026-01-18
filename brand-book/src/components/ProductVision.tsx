@@ -81,7 +81,7 @@ const ProductVision = () => {
         >
           <motion.img
             src={eclipseHorizontal}
-            alt="Brand imagery"
+            alt="Eclipse pattern visualization representing the intersection of archival design and modern technology"
             style={{ y: imageY }}
           />
           <div className="product-vision__image-overlay">
@@ -115,7 +115,7 @@ const ProductVision = () => {
               >
                 <div className="product-vision__step-header">
                   <span className="product-vision__step-number">{step.number}</span>
-                  <div className="product-vision__step-line" />
+                  <div className="product-vision__step-line" aria-hidden="true" />
                 </div>
                 <h4 className="product-vision__step-title">{step.title}</h4>
                 <p className="product-vision__step-desc">{step.description}</p>

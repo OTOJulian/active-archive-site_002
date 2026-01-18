@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { useNavigationDirection } from '../App';
+import PageNav from '../components/PageNav';
 import './ShopPage.css';
 
 const ShopPage = () => {
@@ -32,14 +32,7 @@ const ShopPage = () => {
         ease: [0.32, 0.72, 0, 1]
       }}
     >
-      <nav className="page__nav">
-        <Link to="/" className="page__brand">Active : Archive</Link>
-        <div className="page__links">
-          <Link to="/shop" className="page__link page__link--active">Shop</Link>
-          <Link to="/sell" className="page__link">Sell</Link>
-          <Link to="/design" className="page__link">Design</Link>
-        </div>
-      </nav>
+      <PageNav activePage="shop" />
 
       <motion.section
         className="app-page"
@@ -60,7 +53,7 @@ const ShopPage = () => {
         <motion.div className="app-page__features" {...fadeUp}>
           <div className="app-page__feature">
             <span className="app-page__feature-number">01</span>
-            <h3 className="app-page__feature-title">Provenance</h3>
+            <h2 className="app-page__feature-title">Provenance</h2>
             <p className="app-page__feature-desc">
               Trace your garment's journey from archival pattern to finished piece. Every material, every maker, documented.
             </p>
@@ -68,7 +61,7 @@ const ShopPage = () => {
 
           <div className="app-page__feature">
             <span className="app-page__feature-number">02</span>
-            <h3 className="app-page__feature-title">Care</h3>
+            <h2 className="app-page__feature-title">Care</h2>
             <p className="app-page__feature-desc">
               Fabric-specific care instructions and repair guidance to ensure your piece lasts for generations.
             </p>
@@ -76,7 +69,7 @@ const ShopPage = () => {
 
           <div className="app-page__feature">
             <span className="app-page__feature-number">03</span>
-            <h3 className="app-page__feature-title">Community</h3>
+            <h2 className="app-page__feature-title">Community</h2>
             <p className="app-page__feature-desc">
               Connect with other owners of the same edition. Share styling, stories, and stewardship.
             </p>

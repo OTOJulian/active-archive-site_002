@@ -148,23 +148,7 @@
   color: var(--off-white);
 }
 
-.product-card__cta {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--off-white);
-  background: transparent;
-  border: 1px solid var(--off-white);
-  padding: var(--space-xs) var(--space-sm);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.product-card__cta:hover {
-  background: var(--off-white);
-  color: var(--black);
-}
+/* Button styles now in index.css unified system */
 
 /* Fabric Story Section */
 .product-fabric {
@@ -379,22 +363,7 @@
   margin-bottom: var(--space-xl);
 }
 
-.product-cta__button {
-  font-family: var(--font-mono);
-  font-size: var(--text-sm);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--black);
-  background: var(--off-white);
-  border: none;
-  padding: var(--space-sm) var(--space-lg);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.product-cta__button:hover {
-  background: var(--white);
-}
+/* CTA button styles now in index.css unified system */
 
 /* Responsive */
 @media (max-width: 1024px) {

@@ -197,6 +197,56 @@ a {
   text-decoration: none;
 }
 
+/* ===== Unified Button System ===== */
+.btn {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.btn--primary {
+  color: var(--black);
+  background: var(--off-white);
+  padding: var(--space-sm) var(--space-lg);
+}
+
+.btn--primary:hover {
+  background: var(--white);
+}
+
+.btn--secondary {
+  color: var(--off-white);
+  background: transparent;
+  border: 1px solid var(--off-white);
+  padding: var(--space-xs) var(--space-sm);
+}
+
+.btn--secondary:hover {
+  background: var(--off-white);
+  color: var(--black);
+}
+
+.btn--text {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--light-gray);
+  background: none;
+  border: none;
+  padding: 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.btn--text:hover {
+  color: var(--off-white);
+}
+
 /* Images */
 img {
   max-width: 100%;

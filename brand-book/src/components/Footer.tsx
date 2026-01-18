@@ -27,6 +27,7 @@ const Footer = () => {
             <div className="footer__col">
               <span className="label">Contact</span>
               <p>For partnership inquiries and collaborations.</p>
+              <a href="mailto:hello@activearchive.com" className="footer__email">hello@activearchive.com</a>
             </div>
           </div>
         </motion.div>
@@ -39,7 +40,7 @@ const Footer = () => {
       </div>
 
       {/* Registration marks */}
-      <div className="footer__marks">
+      <div className="footer__marks" aria-hidden="true">
         <div className="footer__mark footer__mark--left" />
         <div className="footer__mark footer__mark--right" />
       </div>
