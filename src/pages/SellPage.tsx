@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useNavigationDirection } from '../App';
-import './ProductPage.css';
+import './SellPage.css';
 import woolImage from '../assets/images/wool_002.png';
 
-const ProductPage = () => {
+const SellPage = () => {
   const direction = useNavigationDirection();
 
   const fadeUp = {
     initial: { opacity: 0, y: 30 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true, margin: '-100px' },
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }
   };
 
   const products = [
@@ -62,8 +62,8 @@ const ProductPage = () => {
       <nav className="page__nav">
         <Link to="/" className="page__brand">Active : Archive</Link>
         <div className="page__links">
-          <Link to="/app" className="page__link">App</Link>
-          <Link to="/product" className="page__link page__link--active">Product</Link>
+          <Link to="/shop" className="page__link">Shop</Link>
+          <Link to="/sell" className="page__link page__link--active">Sell</Link>
           <Link to="/production" className="page__link">Production</Link>
         </div>
       </nav>
@@ -207,8 +207,8 @@ const ProductPage = () => {
             Our companion app provides ongoing guidance, repair resources, and connects
             you with our restoration services when needed.
           </p>
-          <Link to="/app" className="product-care__link">
-            Learn about the App →
+          <Link to="/shop" className="product-care__link">
+            Learn about the Shop →
           </Link>
         </motion.div>
       </section>
@@ -227,4 +227,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default SellPage;

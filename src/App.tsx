@@ -2,16 +2,16 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { createContext, useContext, useRef, useMemo } from 'react';
 import HomePage from './pages/HomePage';
-import AppPage from './pages/AppPage';
-import ProductPage from './pages/ProductPage';
+import ShopPage from './pages/ShopPage';
+import SellPage from './pages/SellPage';
 import ProductionPage from './pages/ProductionPage';
 import './pages/Page.css';
 
 // Page order for determining transition direction
 const PAGE_ORDER: Record<string, number> = {
   '/': 0,
-  '/app': 1,
-  '/product': 2,
+  '/shop': 1,
+  '/sell': 2,
   '/production': 3,
 };
 
@@ -42,8 +42,8 @@ function AnimatedRoutes() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/app" element={<AppPage />} />
-          <Route path="/product" element={<ProductPage />} />
+          <Route path="/shop" element={<ShopPage />} />
+          <Route path="/sell" element={<SellPage />} />
           <Route path="/production" element={<ProductionPage />} />
         </Routes>
       </AnimatePresence>

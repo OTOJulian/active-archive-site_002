@@ -96,8 +96,8 @@ const Hero = () => {
 
       {/* Top Navigation */}
       <nav className="hero__nav">
-        <Link to="/app" className="hero__nav-link">App</Link>
-        <Link to="/product" className="hero__nav-link">Product</Link>
+        <Link to="/shop" className="hero__nav-link">Shop</Link>
+        <Link to="/sell" className="hero__nav-link">Sell</Link>
         <Link to="/production" className="hero__nav-link">Production</Link>
       </nav>
     </section>

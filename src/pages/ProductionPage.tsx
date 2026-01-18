@@ -10,7 +10,7 @@ const ProductionPage = () => {
     initial: { opacity: 0, y: 30 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true, margin: '-100px' },
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }
   };
 
   const processSteps = [
@@ -45,8 +45,8 @@ const ProductionPage = () => {
       <nav className="page__nav">
         <Link to="/" className="page__brand">Active : Archive</Link>
         <div className="page__links">
-          <Link to="/app" className="page__link">App</Link>
-          <Link to="/product" className="page__link">Product</Link>
+          <Link to="/shop" className="page__link">Shop</Link>
+          <Link to="/sell" className="page__link">Sell</Link>
           <Link to="/production" className="page__link page__link--active">Production</Link>
         </div>
       </nav>
@@ -234,8 +234,8 @@ const ProductionPage = () => {
             Explore the collection built with this approach.
           </p>
           <div className="production-cta__links">
-            <Link to="/product" className="production-cta__button">View Products</Link>
-            <Link to="/app" className="production-cta__link">Learn about the App →</Link>
+            <Link to="/sell" className="production-cta__button">View Products</Link>
+            <Link to="/shop" className="production-cta__link">Learn about the Shop →</Link>
           </div>
         </motion.div>
       </section>

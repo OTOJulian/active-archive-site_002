@@ -23,11 +23,11 @@ brand-book/
 │   │   ├── ProductVision.tsx/.css
 │   │   └── VisualIdentity.tsx/.css
 │   ├── pages/              # Route pages
-│   │   ├── AppPage.tsx/.css
+│   │   ├── ShopPage.tsx/.css
+│   │   ├── SellPage.tsx/.css
 │   │   ├── HomePage.tsx
 │   │   ├── Page.css
-│   │   ├── ProductionPage.tsx/.css
-│   │   └── ProductPage.tsx/.css
+│   │   └── ProductionPage.tsx/.css
 │   ├── App.tsx             # Main app with routing & transitions
 │   ├── App.css
 │   ├── index.css           # Global styles & CSS variables
@@ -48,8 +48,8 @@ brand-book/
 
 ### Pages
 - `src/pages/HomePage.tsx` - Renders Hero + sections (landing page)
-- `src/pages/AppPage.tsx` - Digital companion features
-- `src/pages/ProductPage.tsx` - Collection & garments showcase
+- `src/pages/ShopPage.tsx` - Digital companion features (shop experience)
+- `src/pages/SellPage.tsx` - Collection & garments showcase (for brands selling)
 - `src/pages/ProductionPage.tsx` - Manufacturing & technology story
 
 ### Hero Components
