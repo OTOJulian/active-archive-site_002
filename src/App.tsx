@@ -4,7 +4,7 @@ import { createContext, useContext, useRef, useMemo } from 'react';
 import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import SellPage from './pages/SellPage';
-import ProductionPage from './pages/ProductionPage';
+import DesignPage from './pages/DesignPage';
 import './pages/Page.css';
 
 // Page order for determining transition direction
@@ -12,7 +12,7 @@ const PAGE_ORDER: Record<string, number> = {
   '/': 0,
   '/shop': 1,
   '/sell': 2,
-  '/production': 3,
+  '/design': 3,
 };
 
 // Context to share navigation direction
@@ -44,7 +44,7 @@ function AnimatedRoutes() {
           <Route path="/" element={<HomePage />} />
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/sell" element={<SellPage />} />
-          <Route path="/production" element={<ProductionPage />} />
+          <Route path="/design" element={<DesignPage />} />
         </Routes>
       </AnimatePresence>
     </NavigationContext.Provider>

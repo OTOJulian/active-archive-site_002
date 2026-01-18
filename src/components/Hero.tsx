@@ -98,7 +98,7 @@ const Hero = () => {
       <nav className="hero__nav">
         <Link to="/shop" className="hero__nav-link">Shop</Link>
         <Link to="/sell" className="hero__nav-link">Sell</Link>
-        <Link to="/production" className="hero__nav-link">Production</Link>
+        <Link to="/design" className="hero__nav-link">Design</Link>
       </nav>
     </section>
   );

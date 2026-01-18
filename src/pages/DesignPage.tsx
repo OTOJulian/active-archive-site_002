@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useNavigationDirection } from '../App';
-import './ProductionPage.css';
+import './DesignPage.css';
 
-const ProductionPage = () => {
+const DesignPage = () => {
   const direction = useNavigationDirection();
 
   const fadeUp = {
@@ -47,7 +47,7 @@ const ProductionPage = () => {
         <div className="page__links">
           <Link to="/shop" className="page__link">Shop</Link>
           <Link to="/sell" className="page__link">Sell</Link>
-          <Link to="/production" className="page__link page__link--active">Production</Link>
+          <Link to="/design" className="page__link page__link--active">Design</Link>
         </div>
       </nav>
 
@@ -243,4 +243,4 @@ const ProductionPage = () => {
   );
 };
 
-export default ProductionPage;
+export default DesignPage;

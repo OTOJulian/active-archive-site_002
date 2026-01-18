@@ -37,7 +37,7 @@ const ShopPage = () => {
         <div className="page__links">
           <Link to="/shop" className="page__link page__link--active">Shop</Link>
           <Link to="/sell" className="page__link">Sell</Link>
-          <Link to="/production" className="page__link">Production</Link>
+          <Link to="/design" className="page__link">Design</Link>
         </div>
       </nav>
 

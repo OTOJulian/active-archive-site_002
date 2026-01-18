@@ -64,7 +64,7 @@ const SellPage = () => {
         <div className="page__links">
           <Link to="/shop" className="page__link">Shop</Link>
           <Link to="/sell" className="page__link page__link--active">Sell</Link>
-          <Link to="/production" className="page__link">Production</Link>
+          <Link to="/design" className="page__link">Design</Link>
         </div>
       </nav>
 

@@ -25,9 +25,9 @@ brand-book/
 │   ├── pages/              # Route pages
 │   │   ├── ShopPage.tsx/.css
 │   │   ├── SellPage.tsx/.css
+│   │   ├── DesignPage.tsx/.css
 │   │   ├── HomePage.tsx
-│   │   ├── Page.css
-│   │   └── ProductionPage.tsx/.css
+│   │   └── Page.css
 │   ├── App.tsx             # Main app with routing & transitions
 │   ├── App.css
 │   ├── index.css           # Global styles & CSS variables
@@ -50,7 +50,7 @@ brand-book/
 - `src/pages/HomePage.tsx` - Renders Hero + sections (landing page)
 - `src/pages/ShopPage.tsx` - Digital companion features (shop experience)
 - `src/pages/SellPage.tsx` - Collection & garments showcase (for brands selling)
-- `src/pages/ProductionPage.tsx` - Manufacturing & technology story
+- `src/pages/DesignPage.tsx` - Manufacturing & technology story
 
 ### Hero Components
 - `src/components/Hero.tsx` - Main landing hero with brand name, initiative band, nav
