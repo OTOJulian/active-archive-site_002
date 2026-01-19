@@ -44,7 +44,6 @@ const Hero = () => {
         >
           <Link to="/" className="hero__brand-link">
             <span>Active</span>
-            <span className="hero__brand-colon">:</span>
             <span>Archive</span>
           </Link>
         </motion.div>

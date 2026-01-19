@@ -85,7 +85,7 @@
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  max-width: calc(clamp(3rem, 10vw, 8rem) * 8.25);
+  max-width: calc(clamp(3rem, 10vw, 8rem) * 7.5);
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   text-transform: uppercase;
