@@ -1,19 +1,21 @@
 # Project State
 
 ## Current Session
-- **Working on**: Design system polish and accessibility
-- **Last completed**: Full accessibility audit + design system refactor
+- **Working on**: Brand name refinement
+- **Last completed**: Hero typography adjustments
 - **Blocked by**: Nothing
 
 ## Key Decisions Made This Session
+- Removed colon from brand name: "Active : Archive" → "Active Archive"
+- Adjusted initiative band width to align "A" and "Initiative" with brand name edges
+
+## Previous Session Decisions
 - Extracted shared `<PageNav />` component for Shop/Sell/Design pages
 - Created unified button system (`.btn`, `.btn--primary`, `.btn--secondary`, `.btn--text`)
 - Added skip link for keyboard navigation
 - Added `prefers-reduced-motion` support globally
 - Hero nav intentionally different from page nav (immersive landing UX)
-
-## Previous Session Decisions (Preserved)
-- Overview = pitch (what Active:Archive is, why it matters)
+- Overview = pitch (what Active Archive is, why it matters)
 - Shop/Design/Sell = interactive demos, not more pitching
 - Shop: consumer experience demo (browse → measure → checkout)
 - Design: brand tool demo (upload pattern → convert → iterate → combine)
@@ -39,6 +41,7 @@
 - [Date]: Initial site structure, password gate, hero
 - [Date]: Core sections (Concept, Process, Technology, Moment)
 - 2026-01-18: Accessibility audit (RAMS + Web Interface Guidelines), design system refactor
+- 2026-01-18: Brand name refinement (removed colon, aligned initiative band)
 
 ## Open Questions
 - What specifically goes in Projects section? Case studies vs archive pieces?
