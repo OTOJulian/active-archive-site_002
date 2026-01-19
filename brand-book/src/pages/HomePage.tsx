@@ -11,6 +11,7 @@ const HomePage = () => {
 
   return (
     <motion.main
+      id="main-content"
       initial={{ x: direction === 'back' ? '-50%' : '50%', opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: direction === 'back' ? '50%' : '-50%', opacity: 0 }}

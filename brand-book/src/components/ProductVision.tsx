@@ -12,7 +12,7 @@ const journeySteps = [
   {
     number: '02',
     title: 'Measure',
-    description: 'Our technology captures your unique measurements through a simple process. No appointments, no guesswork — just precision fit.'
+    description: 'Our technology captures your unique measurements through a simple process. No appointments, no guesswork—just precision fit.'
   },
   {
     number: '03',
@@ -82,6 +82,8 @@ const ProductVision = () => {
           <motion.img
             src={eclipseHorizontal}
             alt="Eclipse pattern visualization representing the intersection of archival design and modern technology"
+            width={1920}
+            height={800}
             style={{ y: imageY }}
           />
           <div className="product-vision__image-overlay">

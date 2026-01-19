@@ -17,7 +17,15 @@
 - The Team (bios + photos)
 - Collaborate section
 - Contact
-- Footer
+- Footer (✅ exists, needs content)
+
+### Phase 3.5: Design System & Accessibility ✅
+- RAMS accessibility audit (aria-hidden, heading hierarchy, alt text)
+- Web Interface Guidelines audit (reduced motion, skip links, image dimensions)
+- Shared `<PageNav />` component
+- Unified button system (`.btn` classes in index.css)
+- Font preloading, theme-color meta
+- All decorative elements properly hidden from AT
 
 ### Phase 4: Projects Section 🔜
 - Case studies / archive pieces

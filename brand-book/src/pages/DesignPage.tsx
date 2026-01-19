@@ -32,6 +32,7 @@ const DesignPage = () => {
 
   return (
     <motion.main
+      id="main-content"
       className="page"
       initial={{ x: direction === 'back' ? '-50%' : '50%', opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
@@ -66,7 +67,7 @@ const DesignPage = () => {
           transition={{ duration: 1, delay: 1.5 }}
         >
           <span>How it works</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path d="M8 3L8 13M8 13L3 8M8 13L13 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </motion.div>
@@ -89,7 +90,7 @@ const DesignPage = () => {
                 Start over.
               </p>
               <p>
-                And when everyone started talking about AI in design — you probably noticed it couldn't
+                And when everyone started talking about AI in design—you probably noticed it couldn't
                 actually help. AI doesn't understand shapes. It can't read a DXF and know what the
                 armhole is doing.
               </p>
@@ -97,7 +98,7 @@ const DesignPage = () => {
           </div>
           <div className="design-problem__visual">
             <div className="design-problem__shape">
-              <svg viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M40 20 L160 20 L160 40 L180 60 L180 120 L160 140 L160 260 L40 260 L40 140 L20 120 L20 60 L40 40 Z"
                   stroke="currentColor" strokeWidth="1" fill="none" opacity="0.3"/>
               </svg>
@@ -114,7 +115,7 @@ const DesignPage = () => {
           <h2 className="design-shift__headline">What if a pattern remembered how it was made?</h2>
           <div className="design-shift__explanation">
             <p>
-              An action list isn't a shape — it's the sequence of decisions that created the shape.
+              An action list isn't a shape—it's the sequence of decisions that created the shape.
             </p>
             <motion.div
               className="design-shift__example"
@@ -131,7 +132,7 @@ const DesignPage = () => {
               </code>
             </motion.div>
             <p>
-              Every pattern in your archive was made this way. The instructions existed — they just
+              Every pattern in your archive was made this way. The instructions existed—they just
               weren't recorded. We record them.
             </p>
           </div>
@@ -184,7 +185,7 @@ const DesignPage = () => {
           </p>
           <p className="design-capability__body">
             Pull a sleeve from one garment, a collar from another, a pocket detail from a third.
-            The system handles the joins — matching seam lengths, aligning grain lines, preserving
+            The system handles the joins—matching seam lengths, aligning grain lines, preserving
             construction logic.
           </p>
           <motion.div

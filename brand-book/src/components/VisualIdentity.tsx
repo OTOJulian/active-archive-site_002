@@ -98,6 +98,8 @@ const VisualIdentity = () => {
                 <img
                   src={iconLogo}
                   alt="Active:Archive Icon"
+                  width={80}
+                  height={80}
                   className="visual-identity__icon"
                 />
               </div>
@@ -232,7 +234,7 @@ const VisualIdentity = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <div className="visual-identity__graphic-display">
-                <img src={graphicElement1} alt="Registration marks - square orientation" />
+                <img src={graphicElement1} alt="Registration marks - square orientation" width={200} height={200} />
               </div>
               <div className="visual-identity__graphic-meta">
                 <span className="label label-light">Registration Marks</span>
@@ -248,7 +250,7 @@ const VisualIdentity = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="visual-identity__graphic-display">
-                <img src={graphicElement2} alt="Registration marks - diamond orientation" />
+                <img src={graphicElement2} alt="Registration marks - diamond orientation" width={200} height={200} />
               </div>
               <div className="visual-identity__graphic-meta">
                 <span className="label label-light">Diamond Orientation</span>

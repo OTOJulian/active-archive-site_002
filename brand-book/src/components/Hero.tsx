@@ -23,6 +23,8 @@ const Hero = () => {
         <motion.img
           src={landingImage}
           alt=""
+          width={1920}
+          height={1280}
           style={{ scale: imageScale }}
         />
         <div className="hero__background-overlay" />
@@ -78,7 +80,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 2 }}
         >
           <span className="hero__scroll-label">Overview</span>
-          <div className="hero__scroll-arrow">
+          <div className="hero__scroll-arrow" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 5L12 19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

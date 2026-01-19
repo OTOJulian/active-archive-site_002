@@ -50,6 +50,7 @@ const SellPage = () => {
 
   return (
     <motion.main
+      id="main-content"
       className="page"
       initial={{ x: direction === 'back' ? '-50%' : '50%', opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
@@ -142,7 +143,7 @@ const SellPage = () => {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="product-fabric__swatch">
-            <img src={woolImage} alt="Wool fabric swatch" />
+            <img src={woolImage} alt="Wool fabric swatch" width={400} height={600} />
           </div>
           <div className="product-fabric__swatch" aria-hidden="true"></div>
           <div className="product-fabric__swatch" aria-hidden="true"></div>
@@ -170,7 +171,7 @@ const SellPage = () => {
               Select from our curated size range (XS–XL). We'll help you find your best match
               with detailed measurements and fit guidance.
             </p>
-            <p className="sizing-option__shipping">Ships in 3-5 days</p>
+            <p className="sizing-option__shipping">Ships in 3–5&nbsp;days</p>
           </motion.div>
 
           <motion.div
@@ -186,7 +187,7 @@ const SellPage = () => {
               Submit your measurements for a custom fit. Same price as standard—we believe
               great fit shouldn't cost extra.
             </p>
-            <p className="sizing-option__shipping">Ships in 3-6 weeks</p>
+            <p className="sizing-option__shipping">Ships in 3–6&nbsp;weeks</p>
           </motion.div>
         </div>
       </section>

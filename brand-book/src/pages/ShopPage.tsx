@@ -22,6 +22,7 @@ const ShopPage = () => {
 
   return (
     <motion.main
+      id="main-content"
       className="page"
       initial={{ x: direction === 'back' ? '-50%' : '50%', opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}

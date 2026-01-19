@@ -54,6 +54,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <BrowserRouter>
+      <a href="#main-content" className="skip-link">Skip to main content</a>
       <AnimatedRoutes />
     </BrowserRouter>
   );
